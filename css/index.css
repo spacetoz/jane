@@ -1,0 +1,490 @@
+@charset "UTF-8";
+.show {
+  display: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "microsoft yahei";
+  color: black;
+}
+ul,
+li,
+p,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+aside {
+  display: block;
+}
+header,
+section,
+.new,
+footer {
+  display: block;
+  width: 1170px;
+  margin: 0 auto;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  color: black;
+}
+.clearfix:after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+}
+header {
+  position: relative;
+}
+header a {
+  float: left;
+}
+header ul {
+  float: right;
+}
+header ul li {
+  float: left;
+  padding: 37px 0;
+}
+header ul li a {
+  width: 118px;
+  text-align: center;
+  height: 32px;
+  font-size: 16px;
+  line-height: 32px;
+}
+header ul li a:hover {
+  color: white;
+  background: #c2c6e1;
+}
+header .bg {
+  width: 112px;
+  height: 12px;
+  position: absolute;
+  top: 78px;
+  right: 15px;
+}
+header .bg span {
+  width: 12px;
+  height: 12px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+nav {
+  width: 100%;
+}
+nav img {
+  width: 100%;
+}
+#middle aside {
+  float: left;
+  width: 265px;
+  padding-top: 60px;
+}
+#middle aside h2 {
+  height: 29px;
+  font-size: 18px;
+}
+#middle aside ol li {
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+#middle aside ol li h3 {
+  cursor: pointer;
+  height: 32px;
+  font-size: 14px;
+  background: url(../images/pic_07.jpg) no-repeat 50px 5px;
+}
+#middle aside ol li a {
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #8c8c8c;
+  text-indent: 32px;
+}
+#middle aside ol li a:hover {
+  color: #ed6a6a;
+}
+#middle aside #scrollDiv {
+  height: 92px;
+  overflow: hidden;
+}
+#middle aside #scrollDiv li a {
+  height: 24px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666666;
+}
+#middle aside #scrollDiv li a:hover {
+  color: #ed6a6a;
+}
+#middle .main {
+  float: left;
+  width: 905px;
+  padding-top: 60px;
+}
+#middle .main h2 {
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  height: 38px;
+  line-height: 38px;
+  font-size: 22px;
+}
+#middle .main h2:nth-of-type(1) {
+  position: relative;
+  width: 275px;
+  border: 3px solid #666666;
+}
+#middle .main h2:nth-of-type(1):after {
+  content: '';
+  border: 3px solid #666666;
+  width: 46px;
+  height: 46px;
+  -webkit-border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  left: 115px;
+  top: -20px;
+}
+#middle .main .bottom {
+  padding-top: 30px;
+  overflow: hidden;
+}
+#middle .main .bottom a {
+  float: left;
+  width: 276px;
+  margin-right: 18px;
+  position: relative;
+}
+#middle .main .bottom a img {
+  display: block;
+}
+#middle .main .bottom a #prices {
+  transition: .5s;
+  background: rgba(103, 115, 140, 0.8);
+  position: absolute;
+  left: -210px;
+  top: 254px;
+  width: 190px;
+  height: 52px;
+  padding: 30px 0 10px 20px;
+}
+#middle .main .bottom a #prices p {
+  height: 28px;
+  color: #ffffff;
+}
+#middle .main .bottom a:nth-of-type(1) {
+  width: 316px;
+}
+#middle .main .bottom a:nth-of-type(1):hover #prices {
+  left: 0;
+}
+#content {
+  margin-top: 40px;
+  width: 100%;
+}
+#content img {
+  display: block;
+  width: 100%;
+}
+.new {
+  width: 1170px !important;
+  margin: 0 auto;
+  float: none !important;
+  overflow: hidden;
+  float: left;
+  width: 905px;
+  padding-top: 60px;
+}
+.new h2 {
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  height: 38px;
+  line-height: 38px;
+  font-size: 22px;
+}
+.new h2:nth-of-type(1) {
+  position: relative;
+  width: 275px;
+  border: 3px solid #666666;
+}
+.new h2:nth-of-type(1):after {
+  content: '';
+  border: 3px solid #666666;
+  width: 46px;
+  height: 46px;
+  -webkit-border-radius: 50%;
+  z-index: -1;
+  position: absolute;
+  left: 115px;
+  top: -20px;
+}
+.new .bottom {
+  padding-top: 30px;
+  overflow: hidden;
+}
+.new .bottom a {
+  float: left;
+  width: 276px;
+  margin-right: 18px;
+  position: relative;
+}
+.new .bottom a img {
+  display: block;
+}
+.new .bottom a #prices {
+  transition: .5s;
+  background: rgba(103, 115, 140, 0.8);
+  position: absolute;
+  left: -210px;
+  top: 254px;
+  width: 190px;
+  height: 52px;
+  padding: 30px 0 10px 20px;
+}
+.new .bottom a #prices p {
+  height: 28px;
+  color: #ffffff;
+}
+.new .bottom a:nth-of-type(1) {
+  width: 316px;
+}
+.new .bottom a:nth-of-type(1):hover #prices {
+  left: 0;
+}
+.new .swiper-slide {
+  padding-top: 40px;
+  width: 300px;
+  height: 100%;
+}
+.new .swiper-slide img {
+  height: 462px;
+}
+.box {
+  width: 100%;
+  background: black;
+  margin-top: 40px;
+}
+.box footer {
+  padding-top: 24px;
+  color: #dfdfdf;
+}
+.box footer h2 {
+  font-size: 16px;
+  height: 26px;
+  line-height: 26px;
+  font-weight: normal;
+  border-bottom: 1px solid white;
+  width: 405px;
+  margin-bottom: 25px;
+}
+.box footer ul {
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 24px;
+}
+.box footer ul li {
+  float: left;
+}
+.box footer ul li h3 {
+  height: 74px;
+  line-height: 74px;
+  font-size: 14px;
+}
+.box footer ul li a {
+  display: block;
+  color: #dfdfdf;
+  height: 26px;
+  line-height: 26px;
+  font-size: 12px;
+}
+.box footer ul li a:hover {
+  color: red;
+}
+.box footer ul li input {
+  display: block;
+  padding-left: 20px;
+  background: transparent;
+  color: #dfdfdf;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid #323232;
+  margin-top: 6px;
+  outline: 1px solid white;
+}
+.box footer p {
+  text-align: center;
+  font-size: 14px;
+  height: 95px;
+  line-height: 95px;
+  color: #666666;
+}
+#show {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ebebeb;
+}
+#show ul {
+  float: left;
+  width: 126px;
+  margin-right: 20px;
+}
+#show ul li {
+  margin-bottom: 10px;
+}
+#show .zoom {
+  float: left;
+  width: 553px;
+  height: 700px;
+}
+#show .right {
+  float: left;
+  width: 450px;
+  padding-left: 18px;
+}
+#show .right h2 {
+  height: 42px;
+  font-size: 22px;
+  color: #000000;
+}
+#show .right > p:nth-of-type(1) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+#show .right > p:nth-of-type(1) span {
+  display: inline-block;
+  font-size: 16px;
+  color: #666666;
+}
+#show .right h3 {
+  height: 57px;
+  line-height: 57px;
+  font-size: 16px;
+  color: #404040;
+}
+#show .right h3 span {
+  float: right;
+  color: #b3b3b3;
+  font-weight: normal;
+  font-size: 14px;
+}
+#show .right .pop img {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+#show .right .num {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebebeb;
+}
+#show .right .num select {
+  float: left;
+  display: block;
+  width: 130px;
+  padding-left: 42px;
+  height: 32px;
+  color: #767676;
+}
+#show .right .num p {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+#show .right a {
+  width: 130px;
+  text-align: center;
+  margin-top: 20px;
+  height: 32px;
+  line-height: 32px;
+  color: #ffe1cf;
+  font-size: 14px;
+  background: #ff6000;
+}
+#show .right > p:nth-of-type(2) {
+  color: #797979;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+}
+#tab {
+  padding-top: 52px;
+}
+#tab aside {
+  float: left;
+  width: 430px;
+}
+#tab .tab {
+  float: left;
+  width: 700px;
+  padding-left: 40px;
+}
+#tab .tab ul li {
+  display: inline-block;
+  width: 190px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #e0e0e0;
+  margin-right: 16px;
+}
+#tab .tab .tab_show {
+  padding-top: 26px;
+}
+#tab .tab .tab_show div {
+  color: #8c8c8c;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+  display: none;
+}
+#call {
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+#call h3 {
+  height: 64px;
+  line-height: 64px;
+  font-size: 22px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  text-align: center;
+  color: #010101;
+}
+#call p {
+  color: #666666;
+  height: 56px;
+  line-height: 56px;
+  font-size: 16px;
+  text-align: center;
+}
+#call h2 {
+  height: 102px;
+  line-height: 102px;
+  text-align: center;
+  font-size: 22px;
+}
+#call .swiper-container {
+  margin-left: 2%;
+}
+#call .swiper-slide {
+  padding: 1px;
+}

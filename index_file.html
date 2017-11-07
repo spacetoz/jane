@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	    <link rel="stylesheet" href="css/swiper.min.css">
+		<!--<link rel="stylesheet/less" type="text/css" href="less/new.less">-->
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.js"></script>
+
+	</head>
+	<body>
+		<!--头部-->
+		<header class="clearfix">
+			<a href="#"><img src="images/pic_02.jpg"/></a>
+			<ul class="clearfix">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">衬衫</a></li>
+				<li><a href="#">卫衣</a></li>
+				<li><a href="#">裤子</a></li>
+				<li><a href="#">联系我们</a></li>
+			</ul>
+			<div class="bg clearfix">
+				<span title="#000000"></span>
+				<span title="#47baea"></span>
+				<span title="#e047ea"></span>
+				<span title="#47ea6a"></span>
+				<span title="#ea479b"></span>
+			</div>
+		</header>
+
+		<section id="show" class="clearfix">
+			<ul>
+				<li><img src="images/photo_03.jpg"/></li>
+				<li><img src="images/photo_08.jpg"/></li>
+				<li><img src="images/photo_15.jpg"/></li>
+				<li><img src="images/photo_19.jpg"/></li>
+				<li><img src="images/photo_21.jpg"/></li>
+				<li><img src="images/photo_23.jpg"/></li>
+			</ul>
+			<!--双击放大-->
+			<div class="zoom" style="position: relative;">
+			    <div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide">
+			                <div class="swiper-zoom-container">
+			                    <img src="images/photo_05.jpg" alt="衬衣" title="双击放大(可拖动)"/>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			<div class="right">
+				<h2>Business casual shirt</h2>
+				<h2>免烫商务休闲衬衣</h2>
+				<p>
+					<span style="font-weight: bolder;">RMB: </span>
+					<span style="color: #ff4b4b;font-size: 18px;">200</span>
+					<span style="text-decoration:line-through;margin-left: 22px;">345.00</span>
+					<span style="float:right;">评价此商品</span></p>
+				<h3>蓝色<span>款式：502462-635</span></h3>
+				<div class="pop clearfix">
+					<img src="images/photo_10.jpg"/>
+					<img src="images/photo_12.jpg"/>
+				</div>
+				<h3>尺码表</h3>
+				<div class="num clearfix">
+					<select name="size" id="size">
+						<option value="">尺码</option>
+						<option value="">M</option>
+						<option value="">L</option>
+						<option value="">XL</option>
+						<option value="">XXL</option>
+					</select>
+					<p style="width: 72px;">数量</p>
+					<select id="num" name="number" style="width: 48px;padding-left:10px;">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+					<p id="price" style="padding-left: 20px;">总计：<span style="color: #ff6d6d;">200元</span></p>
+					<script type="text/javascript">
+						$(function(){
+							$('#num').click(function(){
+								aa=$(this).children("option:checked").html();
+								$(this).next('p').children('span').text(aa*200+'元');
+							})
+						})
+					</script>
+				</div>
+				<a href="#" id="click">加入购物车</a>
+				<script type="text/javascript">
+					$(function(){
+					    var $product = $(".right");
+						$("#click").click(function(){
+							var pro_size = $product.find("#size").children("option:checked").html();
+							var pro_num = $product.find("#num").children("option:checked").html();
+						    var pro_price = $product.find("#price span").text();
+							var dialog = " 感谢您的购买。\n您购买的\n"+
+							        "产品是："+'免烫商务休闲衬衣'+"；\n"+
+									"尺寸是："+pro_size+"；\n"+
+									"颜色是："+'蓝色'+"；\n"+
+									"数量是："+pro_num+"；\n"+
+									"总价是："+pro_price;
+							if(confirm(dialog)){
+								alert("您已经加入购物车!");
+							}
+							return false;//避免页面跳转
+						})
+					})				
+				</script>
+				<h3>产品说明</h3>
+				<p>全新精品高支棉衬衫再次提升品质，精选100%新疆长绒棉织造而成，平整度好，短绒少； 80-100高支双股经纬交织，
+					带来无与伦比的舒适享受而且面料反光效果好，具有漂亮的光泽，质感上佳，有利于免烫效果的维持。※不仅如此，
+					深受消费者欢迎的经典款式使精品高
+				</p>
+			</div>
+		</section>
+		<section id="tab" class="clearfix">
+			<aside><img src="images/tu_03.jpg"/></aside>
+			<div class="tab">
+				<ul>
+					<li style="background: black;color: white;">产品属性</li>
+					<li>产品尺码表</li>
+					<li>产品介绍</li>
+				</ul>
+				<div class="tab_show">
+					<div style="display: block;">沿用风靡百年的经典全棉牛津纺面料，通过领先的液氨整理技术使面料的抗皱性能更上一层。
+							延续简约、舒适、健康设计理念，特推出免烫、易打理的精细免烫牛津纺长袖衬衫系列。沿用风靡百年的经典全棉牛津纺面料，
+							通过领先的液氨整理技术，使面料的抗皱性能更上一层。延续简约、舒适、健康设计理念，特推出免烫、易打理的精细免烫牛津
+							纺长袖衬衫系列。沿用风靡百年的经典全棉牛津纺面料，通过领先的液氨整理技术，使面料的抗皱性能更上一层延续简约、舒适、
+							健康设计理念，特推出免烫、易打理的精细免烫牛津纺长袖衬衫系列。</div>
+					<div>产品尺码表</div>
+					<div>产品介绍</div>
+				</div>
+			</div>
+		</section>
+		<section id="call">
+			<h3>评价和反馈</h3>
+			<p>还没有顾客评价过此商品</p>
+			<h2>推荐产品</h2>
+			<div class="swiper-container">
+			  	<div class="swiper-wrapper">
+				    <div class="swiper-slide"><img src="images/photo_27.jpg"/></div>
+				    <div class="swiper-slide"><img src="images/photo_29.jpg"/></div>
+				    <div class="swiper-slide"><img src="images/photo_31.jpg"/></div>
+				    <div class="swiper-slide"><img src="images/photo_33.jpg"/></div>
+				</div>
+			</div>
+		</section>
+		
+		<!--尾部-->
+		<div class="box">
+			<footer>
+				<h2>Jane Shopping，更多优惠产品，最后机会，不容错过！</h2>
+				<ul class="clearfix">
+					<li style="width: 235px;">
+						<h3>购物指南</h3>
+						<a href="#">网上购买</a>
+						<a href="#">订单追踪</a>
+						<a href="#">如何成为VIP</a>
+					</li>
+					<li style="width: 246px;">
+						<h3>探索</h3>
+						<a href="#">免烫高织棉衬衣</a>
+						<a href="#">免烫斜纹衬衣</a>
+						<a href="#">棉小方格正装衬衣</a>
+					</li>
+					<li style="width: 262px;">
+						<h3>关于我们</h3>
+						<a href="#">关于Jane Shopping</a>
+						<a href="#">门店地址</a>
+					</li>
+					<li style="width: 182px;">
+						<h3>联系我们</h3>
+						<a href="#">在线客服</a>
+						<a href="#">向我们发送email</a>
+					</li>
+					<li style="width: 243px;">
+						<h3>输入您的电子邮箱，</h3>
+						<a href="#">获取jane  shopping最新消息</a>
+						<input type="email" name="email" id="email" placeholder="请输入邮箱地址" />
+					</li>
+				</ul>
+				<p>梓钧齐商业（上海）有限公司 沪ICP备14016998号-1</p>
+			</footer>
+		</div>
+	</body>
+	<!--<script src="js/less.min.js"></script>-->
+	<script src="js/swiper.min.js"></script>
+	<script type="text/javascript">
+		var callper = new Swiper('#call .swiper-container', {
+			autoplay: 2000,
+			loop: true,
+			autoplayDisableOnInteraction : false,
+			grabCursor : true,
+			direction: 'horizontal',
+			slidesPerView: 4,
+			resistanceRatio : 0,
+		})
+		var zoomper =new Swiper('.zoom .swiper-container',{
+			zoom: true
+		})
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$('#tab .tab li').click(function(){
+				$('#tab .tab li').css({background:'white',color:'#8c8c8c'});
+				$(this).css({background:'black',color:'white'});
+				$('.tab_show div').hide();
+				$('.tab_show div').eq($(this).index()).show();
+			})
+//			背景色切换
+			$('header .bg span').each(function(num){
+				var color=$(this).attr("title");
+				$(this).css("background",color);
+			})
+			
+			$('header .bg span').click(function(){
+				var colors=$(this).attr("title");
+				$('.box').css('background',colors);
+				$('header ul li a').hover(function(){
+					$(this).css('background',colors);
+				},function(){
+					$(this).css('background','transparent');
+				})
+			})
+
+		})
+	</script>
+</html>
